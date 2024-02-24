@@ -1,0 +1,811 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* STARTING NAVBAR HERE */
+
+.nav{
+    width: 100%;
+    padding: 20px 10vw;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 9;
+}
+
+@media screen and (max-width:767px) {
+    .nav{
+        width: 100%;
+        padding: 15px 5vw;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        background: transparent;
+        z-index: 9;
+    }
+}
+
+/* STARTING HERO SECTION */
+.hero-sectionCont{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-Section{
+    background: url(https://preview.cruip.com/switch/dist/images/header-illustration-light.svg);
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heroSection-MainCont{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 75%;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+}
+/* STARTING FIRST CONTAINER HERE */
+
+.hero-Intro{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-Heading{
+    font-weight: bolder;
+    font-size:45px;
+    font-family: sans-serif;
+    color: #182538;
+    width: 80%;
+    padding: 10px;
+}
+
+.hero-paragraph{
+    color: #6B7A90;
+    font-size: 1.5rem;
+    font-weight: 520;
+    line-height: 1.5rem;
+    text-align: left;
+    padding:10px 15px;
+    width: 80%;
+}
+
+.button-toogleCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+
+.buyItNow{
+    background-color: #535FD7;
+    width: 170px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.toogle-container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.toogle{
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #FFBC48 0, #FE7E1F 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 10px;
+}
+
+.toogler{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+} 
+
+/* STARTING SECOND HERO CONTAINER HERE */
+.second-hero-container{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondContainer{
+    width: 100%;
+    background: url(https://preview.cruip.com/switch/dist/images/hero-media-illustration-light.svg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    z-index: 0;
+}
+
+.secondContainer-ImageCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: wheat; */
+}
+
+.second-hero-container img{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    box-shadow: 48px 16px 48px rgba(24,37,56,0.12);
+    z-index: 1000;
+    transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);
+    top: 5%;
+}
+
+@media screen and (max-width:767px){
+    .hero-sectionCont{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-Section{
+        background: url(https://preview.cruip.com/switch/dist/images/header-illustration-light.svg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0%;
+    }
+    
+    .heroSection-MainCont{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 10%;
+    }
+    /* STARTING FIRST CONTAINER HERE */
+    
+    .hero-Intro{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section-Heading{
+        font-weight: bolder;
+        font-size:30px;
+        font-family: sans-serif;
+        color: #182538;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .hero-paragraph{
+        color: #6B7A90;
+        font-size: 1.5rem;
+        font-weight: 520;
+        line-height: 1.5rem;
+        text-align: left;
+        padding:10px;
+        width: 100%;
+    }
+    
+    .button-toogleCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:15px 10px;
+        width: 100%;
+    }
+    
+    .buyItNow{
+        background-color: #535FD7;
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .toogle-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    
+    .toogle{
+        width: 70px;
+        height: 30px;
+        border-radius: 15px;
+        background: linear-gradient(to right, #FFBC48 0, #FE7E1F 100%);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    .toogler{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+    } 
+    
+    /* STARTING SECOND HERO CONTAINER HERE */
+    .second-hero-container{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .secondContainer{
+        width: 100%;
+        background: url(https://preview.cruip.com/switch/dist/images/hero-media-illustration-light.svg);
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content:  center;
+    }
+    
+    .secondContainer-ImageCont{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: wheat; */
+    }
+    
+    .second-hero-container img{
+        width: 75%;
+        height: 75%;
+        box-shadow: 48px 16px 48px rgba(24,37,56,0.12);
+        transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);
+    }
+}
+
+ /* STARTING PRODUCT SECTION */
+.sectionparagrap{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.productSect{
+    padding: 50px 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productSect .sectionHeader{
+    color: #182538;
+    font-size: 45px;
+    text-align:  center;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: bolder ;
+}
+
+.productSect .sectionText{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    line-height: 1.5rem;
+    color: #9a9999;
+}
+
+.productmain{
+    background-image: url(https://preview.cruip.com/switch/dist/images/features-box-light.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 10vw;
+}
+
+.colormixturebg{
+    background:url(https://preview.cruip.com/switch/dist/images/features-illustration-light.svg);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background: url(https://preview.cruip.com/switch/dist/images/hero-media-light.svg);
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 80%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.firstContimg{
+    height: 100%;
+    width: 100%;
+}
+
+.secondContImg{
+    position: absolute;
+    bottom:-70px;
+    right: -90px;
+}
+
+@media screen and (max-width:767px){
+    .productSect{
+        padding: 30px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .productSect .sectionHeader{
+        color: #182538;
+        font-size: 35px;
+        text-align:  center;
+        padding: 15px;
+        font-family: sans-serif;
+        font-weight: bolder ;
+    }
+    
+    .productSect .sectionText{
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        line-height: 1.5rem;
+        color: #9a9999;
+    }
+    
+    .productmain{
+        background-image: url(https://preview.cruip.com/switch/dist/images/features-box-light.svg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    
+    .colormixturebg{
+        background:url(https://preview.cruip.com/switch/dist/images/features-illustration-light.svg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .box{
+        background: url(https://preview.cruip.com/switch/dist/images/hero-media-light.svg);
+        background-position: center;
+        background-size: cover;
+        height: 65%;
+        width: 90%;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    
+    .firstContimg{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .secondContImg{
+        position: absolute;
+        bottom:-70px;
+        right: -90px;
+    }
+}
+
+/* STARTING FEATURE SECTION */
+
+.featureContainerCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 10vw;
+    gap: 10px;
+}
+
+.featureCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 60%;
+}
+
+.featureIcon{
+    margin: 10px;
+}
+
+.featureTexts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.featureHeader{
+    width: 100%;
+    text-align: left;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #182538;
+    font-family: sans-serif;
+    padding: 10px;
+    position: relative;
+}
+
+.featureHeader::before{
+    position: absolute;
+    content: '';
+    top: 50px;
+    padding: 1px;
+    width: 10%;
+    background: #9a9999;
+}
+
+.featureText{
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    color: #9a9999;
+}
+
+@media screen and (max-width:767px){
+    .featureContainerCont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 10px;
+        gap: 10px;
+    }
+    
+    .featureCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .featureIcon{
+        margin: 10px;
+        margin-top: 0;
+    }
+    
+    .featureTexts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .featureHeader{
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        text-transform: capitalize;
+        color: #182538;
+        font-family: sans-serif;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .featureHeader::before{
+        position: absolute;
+        content: '';
+        top: 55px;
+        left: 45%;
+        padding: 1px;
+        width: 10%;
+        background: #9a9999;
+    }
+    
+    .featureText{
+        font-size: 18px;
+        font-weight: lighter;
+        font-family: sans-serif;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: #9a9999;
+    }
+}
+
+/* STARTING LAST SECTION HERE */
+.lastSection{
+    width: 100%;
+    padding: 30px 10px;
+    background: url(https://preview.cruip.com/switch/dist/images/cta-illustration-light.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.lastSection .sectionHeader{
+    color: #182538;
+    text-align: center;
+    padding: 10px;
+}
+
+.lastSection .sectionParagraph{
+    color: #6B7A90;
+    font-size: 20px;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hrCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+hr{
+    border-top: 1px solid #eaf1fa;
+    width: 80%;
+}
+
+
+@media screen and (max-width:767px) {
+    .lastSection{
+        width: 100%;
+        padding: 50px 10vw;
+        background: url(https://preview.cruip.com/switch/dist/images/cta-illustration-light.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    
+    .lastSection .sectionHeader{
+        color: #182538;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .lastSection .sectionParagraph{
+        color: #6B7A90;
+        font-size: 18px;
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* FOOTER STARTS HERE */
+.footer{
+    padding: 50px 10vw;
+    background: #182538;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLogo-copyright{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo{
+    margin: 15px;
+}
+
+.copyRight{
+    color: #9a9999;
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.icon-navlinks-container{
+    display: flex;
+    flex-direction: column;
+    color: #9a9999;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlinks .links{
+    list-style: none;
+    margin: 10px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.icons i{
+    font-size: 16px;
+    margin: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width:767px){
+    .footer{
+        padding: 50px 10px;
+        background: #182538;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footerLogo-copyright{
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .logo{
+        margin: 15px;
+    }
+    
+    .copyRight{
+        position: absolute;
+        color: #9a9999;
+        text-transform: capitalize;
+        font-size: 16px;
+        bottom: -130%;
+        width: 300px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    
+    .icon-navlinks-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        color: #9a9999;
+    }
+    
+    .navlinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+    
+    .navlinks .links{
+        list-style: none;
+    }
+    
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        order: 2;
+    }
+    
+    .icons i{
+        font-size: 16px;
+        margin: 15px;
+        color: #fff;
+    }
+}
