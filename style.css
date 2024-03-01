@@ -19,7 +19,60 @@ body{
     top: 0;
     background: transparent;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.navigationMenu{
+    display: flex;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.navigationMenu a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #535FD7;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.navigationMenu a:hover::before{
+    position: absolute;
+    content: '';
+    padding: 2px;
+    background: #535FD7;
+    width: 50px;
+    top: 18px;
+    left: 0;
+    animation: Rule .5s;
+}
+
+.active::before{
+    position: absolute;
+    content: '';
+    padding: 2px;
+    background: #535FD7;
+    width: 50px;
+    top: 18px;
+    left: 0;
+    animation: Rule 2s;
+}
+
+@keyframes Rule {
+    from{
+        width: 15px;
+    }
+    to{
+        width: 50px;
+    }
+}
+
+
 
 @media screen and (max-width:767px) {
     .nav{
@@ -31,6 +84,9 @@ body{
         top: 0;
         background: transparent;
         z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -812,4 +868,72 @@ hr{
         margin: 15px;
         color: #fff;
     }
+}
+
+/* STARTING ABOUT PAGE STYLES */
+.aboutBody{
+    background-color: #f0f4fa;
+}
+
+.mainSection{
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(https://preview.cruip.com/switch/dist/images/header-illustration-light.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionHeaderCont{
+    width: 100%;
+    padding: 15px 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutSectionHeader{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    color: #182538;
+    margin: 5px 10px;
+}
+
+.secSmallHeading{
+    text-transform: capitalize;
+    color: #182538;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.mainContent{
+    padding: 5px 5vw;
+}
+
+.paragraphText{
+    line-height: 1.5rem;
+}
+
+/* STARTING MAIN SECTION */
+.contactBody{
+    background: #f0f4fa;
+}
+
+.contactMainSection{
+    width: 100%;
+    height: 100vh;
+    background: url(https://preview.cruip.com/switch/dist/images/header-illustration-light.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
