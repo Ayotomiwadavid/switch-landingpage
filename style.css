@@ -936,4 +936,130 @@ hr{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.contactfirstSection{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionHeading{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    padding: 15px;
+    padding-left: 0;
+    color: #182538;
+    text-transform: capitalize;
+}
+
+.adressContainer{
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adressCont{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.adressTitle{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #182538;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: left;
+}
+
+address{
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+}
+
+
+.contactsecondContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputandlabelContainer{
+    width: 80%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.inputandlabelContainer label{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    color: #182538;
+    font-family: serif;
+}
+
+.inputandlabelContainer input{
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+.contactForm .submitBtn{
+    width: 80%;
+    margin: 10px 0;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #FE7E1F;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
